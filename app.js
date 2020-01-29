@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const genericRouter = require('./routes/genericRouter');
 
 const HOST = '0.0.0.0';
-const PORT = 3000;
+const PORT = process.env.PORT || 8080;
 
 const app = express();
 app.use(bodyParser.json());
